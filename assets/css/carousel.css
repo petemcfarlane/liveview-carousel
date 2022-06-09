@@ -1,0 +1,32 @@
+.carousel {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel .offset {
+  position: relative;
+  top: -100%;
+}
+
+.carousel .offset > div {
+  height: 300px;
+}
+
+@keyframes slide-up-keys {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100%); }
+}
+
+@keyframes slide-down-keys {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(100%); }
+}
+
+.animate-slide-up {
+  animation: 0.2s ease-out 0s normal forwards 1 slide-up-keys;
+}
+
+.animate-slide-down {
+  animation: 0.2s ease-in 0s normal forwards 1 slide-down-keys;
+}
