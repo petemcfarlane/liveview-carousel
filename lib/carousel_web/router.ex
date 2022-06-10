@@ -17,7 +17,7 @@ defmodule CarouselWeb.Router do
   scope "/", CarouselWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    live "/", CarouselLive
   end
 
   # Other scopes may use custom stacks.
